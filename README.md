@@ -14,11 +14,11 @@ When you want to scan for multiple files, it requires passing the "--list True" 
 # Other Options
 python3 index.py --help
 
-**optional arguments:**
-  -h, --help     show this help message and exit
-  --file FILE    File/directory to analyse
-  --list LIST    List of File to analyse
-  --level LEVEL  Severity Level scanning (eg: 1,2,3)
+**optional arguments:** 
+ - -h, --help     show this help message and exit
+ - --file FILE    File/directory to analyse
+ -  --list LIST    List of File to analyse
+ -  --level LEVEL  Severity Level scanning (eg: 1,2,3)
 
 
 # Advantages
