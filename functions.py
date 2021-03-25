@@ -33,27 +33,41 @@ def nth_replace(string, old, new, n):
 def display(path, payload, vulnerability, line, declaration_text, declaration_line, colored, occurrence, plain,simple_matches):
     
     
-    file_path = path.split('saasfinal')
-    
-    if(1 in file_path):
-        #print(file_path)
-        custom_file_path = "saasfinal"+file_path[1]
-    
+    file_path = path.split(e_seperator)
+
+    if(len(file_path) >= 2):
+       
+        custom_file_path = e_projectname+file_path[1]
+        logstr(custom_file_path)
+        #logstr(e_projectname)
+        #logstr(e_seperator)
+
         import hashlib
         hash_object = hashlib.sha256("".join(simple_matches).encode()) 
         code_hex_dig = hash_object.hexdigest()
+
+        path_hash_object = hashlib.sha256("".join(custom_file_path).encode())
+        path_hex_dig = path_hash_object.hexdigest()
+
         for i in whitelist:
-            if(i[0] == custom_file_path):
+            if(i[0] == path_hex_dig):
                 for dig in i[1]:
                     if(code_hex_dig == dig):
                         return False;
         
+            #logstr(custom_file_path[-7:])
             if(custom_file_path[-7:] == "dao.php"):
                 dao_path = custom_file_path[-7:]
                 if(i[0] == dao_path):
                     for dig in i[1]:
                         if(code_hex_dig == dig):
                             return False;
+
+            if(i[0] == "commonwhitelist"):
+                    for dig in i[1]:
+                        if(code_hex_dig == dig):
+                            return False;
+
 
     '''
     Red = '\033[91m'
