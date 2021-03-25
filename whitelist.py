@@ -17,8 +17,8 @@ whitelist = [
         ['exec("php ".dirname(__FILE__)exec("SET NAMES utf8")']
     ],
     ["dao.php",
-        ["7638af69c9b6fee2e8bbeefe0d135b50a1f481062479d96932dec304d3e6acc1"],
-        ['eval("$str)eval("\$str = \"$str\")']
+        ["7638af69c9b6fee2e8bbeefe0d135b50a1f481062479d96932dec304d3e6acc1","9667f45bfb4c5ae4785b3dfba3dc1096cf954008a9841f08db1f2643141ddc7a"],
+        ['eval("$str)eval("\$str = \"$str\")','eval()eval("$str)eval("\$str = \"$str\")']
     ],
     ["saasfinal/booking/database/audittrail.php",
         ["7638af69c9b6fee2e8bbeefe0d135b50a1f481062479d96932dec304d3e6acc1"],
