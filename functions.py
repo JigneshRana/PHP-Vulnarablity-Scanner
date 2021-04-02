@@ -36,10 +36,10 @@ def display(path, payload, vulnerability, line, declaration_text, declaration_li
     file_path = path.split(e_seperator)
 
     if(len(file_path) >= 2):
-       
+       #path from saasfinal
         custom_file_path = e_projectname+file_path[1]
         logstr(custom_file_path)
-        #logstr(e_projectname)
+        #logstr(e_projectnamecustom_file_path)
         #logstr(e_seperator)
 
         import hashlib

@@ -29,9 +29,13 @@ whitelist = [
         ["7638af69c9b6fee2e8bbeefe0d135b50a1f481062479d96932dec304d3e6acc1"],
         ['eval("$str)eval("\$str = \"$str\")']
     ],
-    ["e8d9c25c5d10795ddad571a1aa6bf87293dd52ea482f2183f30b00583127d5d6",
-        ["7638af69c9b6fee2e8bbeefe0d135b50a1f481062479d96932dec304d3e6acc1"],
-        ['eval("$str)eval("\$str = \"$str\")']
+    ["4b54de288d9a52d0f13b3478c8cdcde276492ca9cf8dd809ca16d8bc527a8db9",
+        ["5210bbbef11394c1ff65eaccf775423fb265a1f1c53c5572dfa0ab25053f312f"],
+        ['file_put_contents("/tmp/".$uniqueName,$data)']
+    ],
+    ["7bbc49a8c45aaf335fa52d5e5b13960b3a86b400825d2a1317181175a0f4f3e4",
+        ["b6af87378f4c970c455e375d18304b0cfaa4278b33a6e8a09f3d8d1c86c73171"],
+        ["fopen($fileatt, 'rb')"]
     ],
     ["commonwhitelist",
         ["7638af69c9b6fee2e8bbeefe0d135b50a1f481062479d96932dec304d3e6acc1","0b219a59df1f8c50d0391d7c6bd6a31a0079627d7d171a93213200e2338635e1"],
