@@ -159,9 +159,14 @@ def check_exception(match):
     return False
 
 def logstr(string):
+    dirname, filename = os.path.split(os.path.abspath(__file__))
+    #print("running from", dirname)
+    #print("file is", filename)
     today = datetime.datetime.now() 
     logfile_name = "scannin_log" + today.strftime("%Y%m%d") +".log"
-    f = open("logs/"+logfile_name, "a")
+    log_file = dirname+"/logs/"+logfile_name
+    f = open(log_file, "a")
+    os.chmod(log_file, 0o777)
     
     if isinstance(string, list):
         str1 = ','.join(str(e) for e in string)

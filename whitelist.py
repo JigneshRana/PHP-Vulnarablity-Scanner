@@ -29,6 +29,10 @@ whitelist = [
         ["7638af69c9b6fee2e8bbeefe0d135b50a1f481062479d96932dec304d3e6acc1"],
         ['eval("$str)eval("\$str = \"$str\")']
     ],
+    ["e8d9c25c5d10795ddad571a1aa6bf87293dd52ea482f2183f30b00583127d5d6",
+        ["7638af69c9b6fee2e8bbeefe0d135b50a1f481062479d96932dec304d3e6acc1"],
+        ['eval("$str)eval("\$str = \"$str\")']
+    ],
     ["commonwhitelist",
         ["7638af69c9b6fee2e8bbeefe0d135b50a1f481062479d96932dec304d3e6acc1","0b219a59df1f8c50d0391d7c6bd6a31a0079627d7d171a93213200e2338635e1"],
         ['eval("$str)eval("\$str = \"$str\")','eval()eval("$str)eval("\$str = \"$str\")']
